@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Pufony;
+  src: url(../files/Pufony-1.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Pufony;
+  background-image: linear-gradient(120deg, #474747, #180702);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  font-size: 3rem;
+  color: #d8d8d8;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #fff;
+}
+
+form input::-moz-placeholder {
+  font-family: Pufony;
+}
+
+form input::placeholder {
+  font-family: Pufony;
+}
+
+form button {
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #f5b4a3;
+  color: #fff;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  background-color: #fff;
+  font-size: 1.5rem;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  padding: 1rem;
+  background-color: #ff6f47;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.complete-btn {
+  background-color: #137023;
+}
+
+.todo-item {
+  padding: 0 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}/*# sourceMappingURL=style.css.map */
