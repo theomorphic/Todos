@@ -22,6 +22,7 @@ body{
 header{
 	font-size: 3rem;
 	color: #d8d8d8;
+	// color: #180702;
 }
 
 header,
@@ -51,7 +52,7 @@ form button{
 }
 
 form button:hover{
-	background-color: #f5b4a3;
+	background-color: #180702;
 	color: #fff;
 }
 
@@ -73,6 +74,7 @@ form button:hover{
 	margin: 0.5rem;
 	background-color: #fff;
 	font-size: 1.5rem;
+	transition: all .4s ease;
 }
 
 .todo li{
@@ -100,4 +102,52 @@ form button:hover{
 .fa-trash,
 .fa-check{
 	pointer-events: none;
+}
+
+.completed{
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.fall{
+	transform: translateY(8rem) rotateZ(20deg);
+	opacity: 0;
+}
+
+select{
+	appearance: none;
+	outline: none;
+	border: none;
+	width: 15rem;
+	cursor: pointer;
+	font-family: Pufony;
+
+	padding: 0.5rem;
+	font-size: 1.5rem;
+
+
+}
+
+.select{
+	margin: 1rem;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.select::after{
+	content: "\25BC";
+	color: #fff;
+	position: absolute;
+	background-color: #180702;
+	top: 0;
+	right: 0;
+	padding: 1.2rem;
+	pointer-events: none;
+}
+
+.select:hover::after{
+	background-color: #fff;
+	color: #180702;
+	transition: all .4s ease;
 }
