@@ -22,7 +22,6 @@ body{
 header{
 	font-size: 3rem;
 	color: #d8d8d8;
-	// color: #180702;
 }
 
 header,
@@ -81,32 +80,21 @@ form button:hover{
 	flex: 1;
 }
 
-.trash-btn,
-.complete-btn{
-	padding: 1rem;
-	background-color: #ff6f47;
-	color: #fff;
+.trash-btn{
+	padding: .5rem;
+	background-color: #fff;
+	color: #180702;
 	border: none;
 	cursor: pointer;
-	font-size: 1rem;
-}
-
-.complete-btn{
-	background-color:#137023;
+	font-size: 2rem;
 }
 
 .todo-item{
 	padding: 0 0.5rem;
 }
 
-.fa-trash,
-.fa-check{
+.fa-square-check{
 	pointer-events: none;
-}
-
-.completed{
-	text-decoration: line-through;
-	opacity: 0.5;
 }
 
 .fall{
@@ -114,40 +102,3 @@ form button:hover{
 	opacity: 0;
 }
 
-select{
-	appearance: none;
-	outline: none;
-	border: none;
-	width: 15rem;
-	cursor: pointer;
-	font-family: Pufony;
-
-	padding: 0.5rem;
-	font-size: 1.5rem;
-
-
-}
-
-.select{
-	margin: 1rem;
-	position: relative;
-	overflow: hidden;
-
-}
-
-.select::after{
-	content: "\25BC";
-	color: #fff;
-	position: absolute;
-	background-color: #180702;
-	top: 0;
-	right: 0;
-	padding: 1.2rem;
-	pointer-events: none;
-}
-
-.select:hover::after{
-	background-color: #fff;
-	color: #180702;
-	transition: all .4s ease;
-}
