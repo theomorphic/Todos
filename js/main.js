@@ -1,5 +1,5 @@
 
-import { pictures as pictures } from "./background.js";
+// import { pictures as pictures } from "./background.js";
 
 //Selectors
 const todoInput = document.querySelector(".todo-input");
@@ -72,7 +72,7 @@ function randomArrayNumber(arrayName){
 // function changeBackgroundImage(){
 // 	body.style.backgroundImage = `url(${pictures[randomArrayNumber(pictures)]})`;	
 // }
-changeBackgroundImage()
+// changeBackgroundImage()
 
 function saveLocalTodoes(todo){
 	//check the items
