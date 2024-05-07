@@ -23,7 +23,7 @@ function addTodo(e){
 
 	if(todoInput.value.length === 0){
 		//Prevent zero task
-		todoInput.placeholder = "напиши задачу!"
+		todoInput.placeholder = "напиши задачу"
 	}
 	else{
 		//todo div

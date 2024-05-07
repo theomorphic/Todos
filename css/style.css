@@ -2,6 +2,10 @@
   font-family: Pufony;
   src: url(../files/Pufony-1.otf);
 }
+@font-face {
+  font-family: Cyberpunk;
+  src: url(../files/Cyberpunk.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +13,9 @@
 }
 
 body {
-  font-family: Pufony;
+  font-family: Cyberpunk;
   min-height: 100vh;
-  background-image: url("../img/bg.png");
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -42,11 +46,11 @@ form input {
 }
 
 form input::-moz-placeholder {
-  font-family: Pufony;
+  font-family: Cyberpunk;
 }
 
 form input::placeholder {
-  font-family: Pufony;
+  font-family: Cyberpunk;
 }
 
 form button {
@@ -55,6 +59,7 @@ form button {
   transition: all 0.3s ease;
 }
 
+.trash-btn:hover,
 form button:hover {
   background-color: #180702;
   color: #fff;
@@ -93,6 +98,7 @@ form button:hover {
   border: none;
   cursor: pointer;
   font-size: 2rem;
+  transition: all 0.3s ease;
 }
 
 .todo-item {
