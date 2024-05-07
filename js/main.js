@@ -69,11 +69,9 @@ function randomArrayNumber(arrayName){
 	return randomNumber;
 }
 
-function changeBackgroundImage(){
-	body.style.backgroundImage = `url(${pictures[randomArrayNumber(pictures)]})`;
-
-	
-}
+// function changeBackgroundImage(){
+// 	body.style.backgroundImage = `url(${pictures[randomArrayNumber(pictures)]})`;	
+// }
 changeBackgroundImage()
 
 function saveLocalTodoes(todo){

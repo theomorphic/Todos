@@ -13,15 +13,15 @@
 
 body{
 	font-family: Pufony;
-	background-image: linear-gradient(120deg, #474747, #180702);
 	min-height: 100vh;
+	background-image: url("../img/bg.png");
 	background-size: cover;
 	background-position: center;
 }
 
 header{
-	font-size: 3rem;
-	color: #d8d8d8;
+	font-size: 3.5rem;
+	color: #000;	
 }
 
 header,
@@ -30,6 +30,7 @@ form{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 
 form input,
@@ -40,8 +41,14 @@ form button{
 	background-color: #fff;
 }
 
+form input{
+	box-shadow: 0 10px 5px 0 #00000044;
+
+}
+
 form input::placeholder{
 	font-family: Pufony;
+	
 }
 
 form button{
@@ -74,6 +81,8 @@ form button:hover{
 	background-color: #fff;
 	font-size: 1.5rem;
 	transition: all .4s ease;
+	box-shadow: 0 10px 5px 0 #00000044;
+
 }
 
 .todo li{
