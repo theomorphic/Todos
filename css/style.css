@@ -18,6 +18,7 @@ body {
   min-height: 100vh;
   background-color: #f5c94f;
   background-size: cover;
+  background-image: url("../img/bg.jpg");
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -53,10 +54,6 @@ form {
   margin-bottom: 40px;
 }
 
-form input {
-  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.2666666667);
-}
-
 form input::-moz-placeholder {
   font-family: Montserrat;
   font-size: 1.8rem;
@@ -71,6 +68,7 @@ form button {
   background-color: #fff;
   cursor: pointer;
   transition: all 0.5s ease;
+  font-size: 1.9rem;
 }
 
 .trash-btn:hover,
@@ -154,5 +152,62 @@ form button:hover {
 @media (max-width: 510px) {
   header h1 {
     font-size: 4rem;
+  }
+  form input {
+    font-size: 1.5rem;
+  }
+  form button {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 410px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+  form input {
+    font-size: 1.4rem;
+  }
+  form button {
+    font-size: 1.3rem;
+  }
+  form input::-moz-placeholder {
+    font-size: 1.6rem;
+  }
+  form input::placeholder {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 360px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  form input {
+    font-size: 1.2rem;
+  }
+  form button {
+    font-size: 1.1rem;
+  }
+  form input::-moz-placeholder {
+    font-size: 1.5rem;
+  }
+  form input::placeholder {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 310px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  form input {
+    font-size: 1rem;
+  }
+  form button {
+    font-size: 0.9rem;
+  }
+  form input::-moz-placeholder {
+    font-size: 1.2rem;
+  }
+  form input::placeholder {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */

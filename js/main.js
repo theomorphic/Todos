@@ -5,15 +5,6 @@ const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const body = document.getElementById("body")
 
-const pictures = [
-	"../img/bg/1.jpg",
-	"../img/bg/2.jpg",
-	"../img/bg/3.jpg",
-	"../img/bg/4.png",
-	"../img/bg/5.jpg",
-
-]
-
 //Event Listeners
 
 document.addEventListener("DOMContentLoaded", getTodos);
@@ -74,11 +65,6 @@ function randomArrayNumber(arrayName){
 	const randomNumber = Math.floor(Math.random()*lastIndex);
 	return randomNumber;
 }
-
-function changeBackgroundImage(){
-	body.style.backgroundImage = `url(${pictures[randomArrayNumber(pictures)]})`;	
-}
-changeBackgroundImage()
 
 function saveLocalTodoes(todo){
 	//check the items
