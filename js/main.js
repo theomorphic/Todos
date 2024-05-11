@@ -1,12 +1,18 @@
 
-// import { pictures as pictures } from "./background.js";
-
 //Selectors
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const body = document.getElementById("body")
-// const filterOption = document.querySelector(".filter-todo")
+
+const pictures = [
+	"../img/bg/1.jpg",
+	"../img/bg/2.jpg",
+	"../img/bg/3.jpg",
+	"../img/bg/4.png",
+	"../img/bg/5.jpg",
+
+]
 
 //Event Listeners
 
@@ -69,10 +75,10 @@ function randomArrayNumber(arrayName){
 	return randomNumber;
 }
 
-// function changeBackgroundImage(){
-// 	body.style.backgroundImage = `url(${pictures[randomArrayNumber(pictures)]})`;	
-// }
-// changeBackgroundImage()
+function changeBackgroundImage(){
+	body.style.backgroundImage = `url(${pictures[randomArrayNumber(pictures)]})`;	
+}
+changeBackgroundImage()
 
 function saveLocalTodoes(todo){
 	//check the items
